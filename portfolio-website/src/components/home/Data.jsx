@@ -58,8 +58,8 @@ const Data = () => {
 
       <h3 className="home__subtitle">Full-Stack Web Developer</h3>
       <p className="home__description">
-        Pre-Final year student at Bits Pilani who loves to make real-world
-        applications.
+        A Pre-Final Year Electronics Student at BITS Pilani who is passionate
+        about building full-stack web applications.
       </p>
       <a href="#contact" className="button button--flex">
         Say Hello
