@@ -3,7 +3,7 @@ import "./skills.css";
 import Frontend from "./Frontend.jsx";
 import Backend from "./Backend.jsx";
 
-const Skills = () => {
+const skills = () => {
   return (
     <section className="skills section" id="skills">
       <h2 className="section__title">Skills</h2>
@@ -15,4 +15,4 @@ const Skills = () => {
     </section>
   );
 };
-export default Skills;
+export default skills;
