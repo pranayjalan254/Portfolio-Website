@@ -43,7 +43,7 @@
 
 .active-link,
 .nav__link:hover {
-  color: var(--title-color-dark);
+  color: blue;
 }
 
 @media screen and (max-width: 768px) {
@@ -110,4 +110,7 @@
   .nav__list {
     column-gap: 0;
   }
+}
+.scroll-header {
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }

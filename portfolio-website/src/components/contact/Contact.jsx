@@ -76,7 +76,7 @@ const Contact = () => {
                 type="text"
                 name="name"
                 className="contact__form-input"
-                placeholder="insert your name"
+                placeholder="Insert your name"
               />
             </div>
             <div className="contact__form-div">
@@ -85,7 +85,7 @@ const Contact = () => {
                 type="email"
                 name="email"
                 className="contact__form-input"
-                placeholder="insert your email"
+                placeholder="Insert your email"
               />
             </div>
             <div className="contact__form-div contact__form-area">
