@@ -32,7 +32,7 @@ const Skills = () => {
   };
 
   const skills = [
-    { name: "C | C++", category: "backend", icon: "©️" },
+    { name: "C++", category: "", icon: "©️" },
     { name: "HTML", category: "frontend", icon: <ImHtmlFive /> },
     { name: "CSS", category: "frontend", icon: <FaCss3Alt /> },
     { name: "JavaScript", category: "frontend", icon: <TbBrandJavascript /> },

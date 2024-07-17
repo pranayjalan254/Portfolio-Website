@@ -1,0 +1,161 @@
+.timeline-container {
+  position: relative;
+  padding: 20px 0;
+  margin: 20px 0;
+}
+
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.category-buttons .category-button {
+  background-color: #f1f1f1;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category-buttons .category-button.active,
+.category-buttons .category-button:hover {
+  background-color: var(--title-color);
+  color: white;
+}
+
+.timeline-container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 2px;
+  background: #0d0d0d;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  background: #000000;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-content {
+  position: relative;
+  width: 30%;
+  padding: 10px 20px;
+  background: #f1f1f1;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.timeline-content h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.timeline-content p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  left: 55%;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  left: 15%;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.skill-tag {
+  background-color: #4a4a4a;
+  color: #ffffff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .timeline-content {
+    width: 35%;
+  }
+
+  .timeline-content h3 {
+    font-size: 16px;
+  }
+  .timeline-content p {
+    font-size: 12px;
+  }
+  .timeline-item:nth-child(even) .timeline-content {
+    left: 10%;
+  }
+
+  .skill-tag {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .timeline-content {
+    width: 40%;
+  }
+
+  .timeline-content h3 {
+    margin: 0;
+    font-size: 15px;
+  }
+  .timeline-item:nth-child(even) .timeline-content {
+    left: 5%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .timeline-content {
+    width: 43%;
+  }
+
+  .timeline-content h3 {
+    margin: 0;
+    font-size: 14px;
+  }
+  .timeline-content p {
+    font-size: 11px;
+  }
+  .timeline-item:nth-child(even) .timeline-content {
+    left: 3%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .timeline-content {
+    width: 43%;
+  }
+
+  .timeline-content h3 {
+    margin: 0;
+    font-size: 13px;
+  }
+  .timeline-content p {
+    font-size: 10px;
+  }
+  .timeline-item:nth-child(even) .timeline-content {
+    left: 2%;
+  }
+}
