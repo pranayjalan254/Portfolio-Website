@@ -49,7 +49,7 @@ const Skills = () => {
     { name: "Flask", category: "backend", icon: <FaFlask /> },
     { name: "GitHub", category: "deployment", icon: <FaGithub /> },
     {
-      name: "Google Cloud Platform",
+      name: "Google Cloud",
       category: "deployment",
       icon: <SiGooglecloud />,
     },
