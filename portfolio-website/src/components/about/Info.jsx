@@ -4,7 +4,7 @@ const Info = () => {
       <div className="about__box">
         <i class="uil uil-analytics"></i>
         <h3 className="about__title">Experience</h3>
-        <span className="about__subtitle">Fresher</span>
+        <span className="about__subtitle">0-1 Year</span>
       </div>
       <div className="about__box">
         <i class="uil uil-github-alt"></i>
