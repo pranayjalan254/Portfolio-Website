@@ -101,7 +101,7 @@ const Projects = () => {
               className="project-image"
             />
             <div className="project-info">
-              <h3>{project.title}</h3>
+              <h4 className="project__title">{project.title}</h4>
               <p>{project.description}</p>
               <div className="project-tags">
                 {project.tags.map((tag, tagIndex) => (
