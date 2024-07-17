@@ -16,7 +16,7 @@ const Experience = () => {
       company: "Pacify Medical Technologies Pvt Ltd",
       date: "May 2024 - July 2024",
       description:
-        "Developed a user-interface of web-application using ReactJS that processes wound images to calculate burn areas and integrated a pre-trained Mask RCNN machine-learning model into the backend server using Flask and Google loud to perform the analysis.",
+        "Developed a ReactJS web app interface to process wound images and calculate burn areas, integrating a pre-trained Mask RCNN model with a Flask backend on Google Cloud.",
       skills: ["ReactJS", "Python", "Flask", "Google Cloud"],
     },
     {
