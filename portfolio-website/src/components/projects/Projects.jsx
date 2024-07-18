@@ -18,7 +18,7 @@ const Projects = () => {
       title: "Wound Area Estimator",
       description:
         "A web application that estimates the area of a wound using image processing techniques.",
-      video: "../src/assets/wound-area.mp4",
+      video: "/wound-area.mp4",
       categories: ["fullstack"],
       github: "https://github.com/pranayjalan254/wound-sensor",
       live: "https://wound-sensor.vercel.app/",
@@ -28,7 +28,7 @@ const Projects = () => {
       title: "Task Manager API",
       description:
         "A practice project to learn about RESTful APIs and CRUD operations.",
-      video: "../src/assets/task-manager.mp4",
+      video: "/task-manager.mp4",
       categories: ["backend"],
       github: "https://github.com/pranayjalan254/Task-Manager",
       tags: ["Nodejs", "RestAPIs", "Express", "Practice"],
@@ -36,7 +36,7 @@ const Projects = () => {
     {
       title: "BITS Blockchain Club Website",
       description: "A website for the blockchain club of BITS Pilani",
-      video: "../src/assets/blockchain-club.mp4",
+      video: "/blockchain-club.mp4",
       categories: ["frontend"],
       github: "https://github.com/BITS-BLOCKCHAIN/BitsBlockchainWebsite",
       live: "https://bitsblockchain.vercel.app/",
@@ -45,7 +45,7 @@ const Projects = () => {
     {
       title: "Bank Loan Management System",
       description: "A practice project to learn MERN stack and Restful APIs.",
-      video: "../src/assets/loan.mp4",
+      video: "/loan.mp4",
       categories: ["fullstack"],
       github: "https://github.com/yourusername/task-api",
       tags: ["MERN", "RestAPIs", "Practice"],
@@ -54,7 +54,7 @@ const Projects = () => {
       title: "Deadman Switch",
       description:
         "A very simple project to get started with solidity and blockchain.",
-      video: "../src/assets/deadman.png",
+      video: "/deadman.png",
       categories: ["backend"],
       github: "https://github.com/pranayjalan254/deadmanswitch",
       tags: ["Blockchain", "Solidity", "Practice"],
