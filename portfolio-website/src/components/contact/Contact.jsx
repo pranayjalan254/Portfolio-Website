@@ -44,7 +44,11 @@ const Contact = () => {
               <FaSquareXTwitter className="contact__card-icon" />
               <h3 className="contact__card-title">Twitter</h3>
               <span className="contact__card-data">pranaytwts</span>
-              <a href="https://x.com/pranaytwts" className="contact__button">
+              <a
+                href="https://x.com/pranaytwts"
+                target="_blank"
+                className="contact__button"
+              >
                 Write Me <FaArrowRight className="contact__button-icon" />
               </a>
             </div>
@@ -55,6 +59,7 @@ const Contact = () => {
               <span className="contact__card-data">pranayjalan254</span>
               <a
                 href="https://www.linkedin.com/in/pranay-jalan254"
+                target="_blank"
                 className="contact__button"
               >
                 Write Me <FaArrowRight className="contact__button-icon" />

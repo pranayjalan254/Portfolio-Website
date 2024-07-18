@@ -8,12 +8,18 @@ const Info = () => {
       </div>
       <div className="about__box">
         <i class="uil uil-github-alt"></i>
-        <h3 className="about__title">GitHub</h3>
+        <h3 className="about__title">
+          <a href="https://github.com/pranayjalan254" target="_blank">
+            GitHub
+          </a>
+        </h3>
         <span className="about__subtitle">pranayjalan254</span>
       </div>
       <div className="about__box">
         <i class="uil uil-envelope-question"></i>
-        <h3 className="about__title">Contact</h3>
+        <h3 className="about__title">
+          <a href="mailto:pranayjalan.work@gmail.com">Contact</a>
+        </h3>
         <span className="about__subtitle">Email 24/7</span>
       </div>
     </div>
