@@ -56,7 +56,7 @@
   position: relative;
 }
 .project__title {
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding-bottom: 0.1rem;
 }
 
@@ -130,7 +130,9 @@
 .project-card:hover .project-links {
   opacity: 1;
 }
-
+.project__des {
+  font-size: 0.8rem;
+}
 .project-link {
   display: flex;
   align-items: center;

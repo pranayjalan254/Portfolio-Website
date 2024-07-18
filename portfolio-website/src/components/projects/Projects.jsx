@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./projects.css";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import { useState } from "react";
+import VideoPlayer from "./Videoplayer";
 
 const Projects = () => {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -15,54 +15,49 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "E-commerce Platform",
+      title: "Wound Area Estimator",
       description:
-        "A full-featured online shopping platform with user authentication, product catalog, and payment integration.",
-      image: "https://picsum.photos/200/300",
+        "A web application that estimates the area of a wound using image processing techniques.",
+      video: "./src/assets/wound-area.mp4",
       categories: ["fullstack"],
-      github: "https://github.com/yourusername/ecommerce",
-      live: "https://your-ecommerce.com",
-      tags: ["React", "Node.js", "MongoDB", "Express", "Redux"],
+      github: "https://github.com/pranayjalan254/wound-sensor",
+      live: "https://wound-sensor.vercel.app/",
+      tags: ["React", "Flask", "Python", "Google Cloud"],
     },
     {
-      title: "Weather Dashboard",
+      title: "Task Manager API",
       description:
-        "A responsive weather application that displays current weather and forecasts for multiple cities.",
-      image: "https://picsum.photos/200/300",
+        "A practice project to learn about RESTful APIs and CRUD operations.",
+      video: "./src/assets/task-manager.mp4",
+      categories: ["backend"],
+      github: "https://github.com/pranayjalan254/Task-Manager",
+      tags: ["Nodejs", "RestAPIs", "Express", "Practice"],
+    },
+    {
+      title: "BITS Blockchain Club Website",
+      description: "A website for the blockchain club of BITS Pilani",
+      video: "./src/assets/blockchain-club.mp4",
       categories: ["frontend"],
-      github: "https://github.com/yourusername/weather-app",
-      live: "https://your-weather-app.com",
-      tags: ["React", "API", "CSS3", "JavaScript"],
+      github: "https://github.com/BITS-BLOCKCHAIN/BitsBlockchainWebsite",
+      live: "https://bitsblockchain.vercel.app/",
+      tags: ["React", "Vercel", "Club"],
     },
     {
-      title: "Task Management API",
-      description:
-        "RESTful API for a task management system with user authentication and task CRUD operations.",
-      image: "https://picsum.photos/200/300",
-      categories: ["backend"],
+      title: "Bank Loan Management System",
+      description: "A practice project to learn MERN stack and Restful APIs.",
+      video: "./src/assets/loan.mp4",
+      categories: ["fullstack"],
       github: "https://github.com/yourusername/task-api",
-      live: "https://your-task-api.com",
-      tags: ["Node.js", "Express", "MongoDB", "JWT"],
+      tags: ["MERN", "RestAPIs", "Practice"],
     },
     {
-      title: "Task Management API",
+      title: "Deadman Switch",
       description:
-        "RESTful API for a task management system with user authentication and task CRUD operations.",
-      image: "https://picsum.photos/200/300",
+        "A very simple project to get started with solidity and blockchain.",
+      video: "./src/assets/deadman.png",
       categories: ["backend"],
-      github: "https://github.com/yourusername/task-api",
-      live: "https://your-task-api.com",
-      tags: ["Node.js", "Express", "MongoDB", "JWT"],
-    },
-    {
-      title: "Task Management API",
-      description:
-        "RESTful API for a task management system with user authentication and task CRUD operations.",
-      image: "https://picsum.photos/200/300",
-      categories: ["backend"],
-      github: "https://github.com/yourusername/task-api",
-      live: "https://your-task-api.com",
-      tags: ["Node.js", "Express", "MongoDB", "JWT"],
+      github: "https://github.com/pranayjalan254/deadmanswitch",
+      tags: ["Blockchain", "Solidity", "Practice"],
     },
   ];
 
@@ -95,14 +90,10 @@ const Projects = () => {
       <div className="projects-grid">
         {filteredProjects.map((project, index) => (
           <div key={index} className="project-card">
-            <img
-              src={project.image}
-              alt={project.title}
-              className="project-image"
-            />
+            <VideoPlayer src={project.video} playbackRate={2} />
             <div className="project-info">
               <h4 className="project__title">{project.title}</h4>
-              <p>{project.description}</p>
+              <p className="project__des">{project.description}</p>
               <div className="project-tags">
                 {project.tags.map((tag, tagIndex) => (
                   <span key={tagIndex} className="project-tag">
@@ -135,4 +126,5 @@ const Projects = () => {
     </section>
   );
 };
+
 export default Projects;
