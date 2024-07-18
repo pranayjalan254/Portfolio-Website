@@ -172,8 +172,12 @@
   }
   .home__title {
     font-size: 30px;
+    margin-left: 1rem;
   }
   .home__subtitle {
-    font-size: 10px;
+    font-size: 15px;
+  }
+  .home__img {
+    margin-left: 2rem;
   }
 }

@@ -37,7 +37,6 @@
   font-size: var(--tiny-font-size);
 }
 .about__description {
-  margin: 0 4rem 0 0;
   margin-bottom: var(--mb-2-5);
 }
 
@@ -69,6 +68,7 @@
   }
   .about__description {
     padding: 0;
+    margin: 0.5rem 0.5rem;
   }
   .about__img {
     display: none;

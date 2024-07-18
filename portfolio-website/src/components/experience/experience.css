@@ -147,7 +147,9 @@
   .timeline-content {
     width: 43%;
   }
-
+  .category-button {
+    font-size: 0.9rem;
+  }
   .timeline-content h3 {
     margin: 0;
     font-size: 13px;
@@ -157,5 +159,11 @@
   }
   .timeline-item:nth-child(even) .timeline-content {
     left: 2%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .category-button {
+    font-size: 0.7rem;
   }
 }
