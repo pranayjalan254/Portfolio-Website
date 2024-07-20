@@ -48,6 +48,7 @@ const Projects = () => {
       video: "/loan.mp4",
       categories: ["fullstack"],
       github: "https://github.com/yourusername/task-api",
+      live: "https://bank-loan-management-system.vercel.app/",
       tags: ["MERN", "RestAPIs", "Practice"],
     },
     {
