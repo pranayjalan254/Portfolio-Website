@@ -9,6 +9,7 @@ import Footer from "./components/footer/Footer";
 import ScrollUp from "./components/scrollup/ScrollUp";
 import Projects from "./components/projects/Projects";
 import Experience from "./components/experience/Experience";
+import Coursework from "./components/coursework/Coursework";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Experience />
         <Skills />
         <Projects />
+        <Coursework />
         <Contact />
       </main>
       <Footer />
