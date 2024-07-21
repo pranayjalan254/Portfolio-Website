@@ -1,3 +1,6 @@
+.coursework {
+  margin: 0 100px;
+}
 .coursework-container {
   padding: 40px;
   border-radius: 10px;
@@ -10,6 +13,7 @@
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  padding-left: 50px;
 }
 
 .coursework-card {
@@ -45,12 +49,18 @@
 }
 
 @media (max-width: 768px) {
+  .coursework {
+    margin: 0 50px;
+  }
   .coursework-card {
     width: calc(100% - 40px);
   }
 }
 
 @media (max-width: 480px) {
+  .coursework {
+    margin: 0 25px;
+  }
   .coursework-container {
     padding: 20px;
   }
@@ -62,5 +72,11 @@
 
   .coursework-card p {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .coursework {
+    margin: 0 10px;
   }
 }
