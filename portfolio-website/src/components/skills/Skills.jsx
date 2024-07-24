@@ -18,6 +18,8 @@ import { SiMongoose } from "react-icons/si";
 import { IoLogoFirebase } from "react-icons/io5";
 import { SiPostman } from "react-icons/si";
 import { FaDatabase } from "react-icons/fa";
+import { TbBrandTypescript } from "react-icons/tb";
+
 import { AiOutlineDeploymentUnit } from "react-icons/ai";
 
 const Skills = () => {
@@ -36,6 +38,7 @@ const Skills = () => {
     { name: "HTML", category: "frontend", icon: <ImHtmlFive /> },
     { name: "CSS", category: "frontend", icon: <FaCss3Alt /> },
     { name: "JavaScript", category: "frontend", icon: <TbBrandJavascript /> },
+    { name: "TypeScript", category: "frontend", icon: <TbBrandTypescript /> },
     { name: "Reactjs", category: "frontend", icon: <FaReact /> },
     { name: "Redux", category: "frontend", icon: <SiRedux /> },
     { name: "Nodejs", category: "backend", icon: <FaCircleNodes /> },
@@ -43,7 +46,6 @@ const Skills = () => {
     { name: "Postman", category: "backend", icon: <SiPostman /> },
     { name: "MongoDB", category: "database", icon: <SiMongodb /> },
     { name: "Mongoose", category: "database", icon: <SiMongoose /> },
-
     { name: "Firebase", category: "database", icon: <IoLogoFirebase /> },
     { name: "Python", category: "backend", icon: <FaPython /> },
     { name: "Flask", category: "backend", icon: <FaFlask /> },
