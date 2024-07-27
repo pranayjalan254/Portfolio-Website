@@ -19,14 +19,15 @@ import { IoLogoFirebase } from "react-icons/io5";
 import { SiPostman } from "react-icons/si";
 import { FaDatabase } from "react-icons/fa";
 import { TbBrandTypescript } from "react-icons/tb";
-
+import { TbBrandNextjs } from "react-icons/tb";
 import { AiOutlineDeploymentUnit } from "react-icons/ai";
+import { SiAppwrite } from "react-icons/si";
+import { FaDocker } from "react-icons/fa";
 
 const Skills = () => {
-  const [activeCategory, setActiveCategory] = useState("all");
+  const [activeCategory, setActiveCategory] = useState("frontend");
 
   const categories = {
-    all: { icon: "🔧", name: "All" },
     frontend: { icon: "🖥️", name: "Frontend" },
     backend: { icon: "🔒", name: "Backend" },
     database: { icon: <FaDatabase />, name: "Database" },
@@ -41,14 +42,17 @@ const Skills = () => {
     { name: "TypeScript", category: "frontend", icon: <TbBrandTypescript /> },
     { name: "Reactjs", category: "frontend", icon: <FaReact /> },
     { name: "Redux", category: "frontend", icon: <SiRedux /> },
+    { name: "NextJS", category: "frontend", icon: <TbBrandNextjs /> },
     { name: "Nodejs", category: "backend", icon: <FaCircleNodes /> },
     { name: "Expressjs", category: "backend", icon: <SiExpress /> },
     { name: "Postman", category: "backend", icon: <SiPostman /> },
+    { name: "Python", category: "backend", icon: <FaPython /> },
+    { name: "Flask", category: "backend", icon: <FaFlask /> },
+    { name: "Appwrite", category: "backend", icon: <SiAppwrite /> },
     { name: "MongoDB", category: "database", icon: <SiMongodb /> },
     { name: "Mongoose", category: "database", icon: <SiMongoose /> },
     { name: "Firebase", category: "database", icon: <IoLogoFirebase /> },
-    { name: "Python", category: "backend", icon: <FaPython /> },
-    { name: "Flask", category: "backend", icon: <FaFlask /> },
+    { name: "Docker", category: "deployment", icon: <FaDocker /> },
     { name: "GitHub", category: "deployment", icon: <FaGithub /> },
     {
       name: "Google Cloud",
@@ -58,10 +62,9 @@ const Skills = () => {
     { name: "Vercel", category: "deployment", icon: <SiVercel /> },
   ];
 
-  const filteredSkills =
-    activeCategory === "all"
-      ? skills
-      : skills.filter((skill) => skill.category === activeCategory);
+  const filteredSkills = skills.filter(
+    (skill) => skill.category === activeCategory
+  );
   return (
     <section className="skills section" id="skills">
       <h2 className="section__title">Skills</h2>
