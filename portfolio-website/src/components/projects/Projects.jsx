@@ -29,11 +29,11 @@ const Projects = () => {
       title: "Email/SMS Spam Classifier",
       description:
         "A practice project to familiarize with machine learning and natural language processing.",
-      video: "/wound-area.mp4",
+      video: "/spam.mp4",
       categories: ["machine_learning"],
       github:
         "https://github.com/pranayjalan254/Machine-Learning-Projects/tree/main/spam-email-classifier",
-      live: "",
+      live: "https://github.com/pranayjalan254/Machine-Learning-Projects/tree/main/spam-email-classifier",
       tags: ["Logistic Regression", "Naive Bayes", "Python", "NLTK"],
     },
     {
@@ -102,14 +102,21 @@ const Projects = () => {
       </div>
       <div className="projects-grid">
         {filteredProjects.map((project, index) => (
-          <div key={index} className="project-card">
-            <VideoPlayer src={project.video} playbackRate={2} />
+          <div key={`${project.title}-${index}`} className="project-card">
+            <VideoPlayer
+              key={`${project.title}-video-${index}`}
+              src={project.video}
+              playbackRate={2}
+            />
             <div className="project-info">
               <h4 className="project__title">{project.title}</h4>
               <p className="project__des">{project.description}</p>
               <div className="project-tags">
                 {project.tags.map((tag, tagIndex) => (
-                  <span key={tagIndex} className="project-tag">
+                  <span
+                    key={`${project.title}-${tag}-${tagIndex}`}
+                    className="project-tag"
+                  >
                     {tag}
                   </span>
                 ))}
@@ -124,14 +131,16 @@ const Projects = () => {
               >
                 <FaGithub />
               </a>
-              <a
-                href={project.live}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-link"
-              >
-                <FaExternalLinkAlt />
-              </a>
+              {project.live && (
+                <a
+                  href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-link"
+                >
+                  <FaExternalLinkAlt />
+                </a>
+              )}
             </div>
           </div>
         ))}

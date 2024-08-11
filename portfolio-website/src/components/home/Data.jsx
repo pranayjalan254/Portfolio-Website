@@ -1,5 +1,4 @@
 import React from "react";
-import CV from "../../assets/Pranay-Jalan-Resume.pdf";
 
 const Data = () => {
   return (
@@ -62,7 +61,11 @@ const Data = () => {
         A Pre-Final Year Electronics Student at BITS Pilani who is passionate
         about building full-stack web applications.
       </p>
-      <a download="" href={CV} className="button button--flex">
+      <a
+        href="https://drive.google.com/file/d/1a0gydXn9er2dVoMdp0SAogj5UzQNa4Mm/view?usp=sharing"
+        target="_blank"
+        className="button button--flex"
+      >
         Download CV
         <svg
           className="button__icon"
