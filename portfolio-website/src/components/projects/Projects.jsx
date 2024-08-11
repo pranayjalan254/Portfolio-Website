@@ -11,6 +11,7 @@ const Projects = () => {
     frontend: { icon: "🖥️", name: "Frontend" },
     backend: { icon: "🔒", name: "Backend" },
     fullstack: { icon: "🌐", name: "Full Stack" },
+    machine_learning: { icon: "🤖", name: "Machine Learning" },
   };
 
   const projects = [
@@ -23,6 +24,17 @@ const Projects = () => {
       github: "https://github.com/pranayjalan254/wound-sensor",
       live: "https://wound-sensor.vercel.app/",
       tags: ["React", "Flask", "Python", "Google Cloud"],
+    },
+    {
+      title: "Email/SMS Spam Classifier",
+      description:
+        "A practice project to familiarize with machine learning and natural language processing.",
+      video: "/wound-area.mp4",
+      categories: ["machine_learning"],
+      github:
+        "https://github.com/pranayjalan254/Machine-Learning-Projects/tree/main/spam-email-classifier",
+      live: "",
+      tags: ["Logistic Regression", "Naive Bayes", "Python", "NLTK"],
     },
     {
       title: "Task Manager API",
