@@ -9,12 +9,32 @@ const Projects = () => {
   const categories = {
     all: { icon: "🔧", name: "All" },
     frontend: { icon: "🖥️", name: "Frontend" },
-    backend: { icon: "🔒", name: "Backend" },
     fullstack: { icon: "🌐", name: "Full Stack" },
+    blockchain: { icon: "🤖", name: "Blockchain" },
     machine_learning: { icon: "🤖", name: "Machine Learning" },
   };
 
   const projects = [
+    {
+      title: "DocVault",
+      description:
+        "A decentralized credential issuance platform that allows institutions to issue and verify credentials on the blockchain.",
+      video: "/doc-vault.mp4",
+      categories: ["blockchain", "fullstack"],
+      github: "https://github.com/pranayjalan254/docVault",
+      live: "https://doc-vault.vercel.app/",
+      tags: ["ReactJS", "Solidity", "Firebase", "Blockchain"],
+    },
+    {
+      title: "TokenTrackr",
+      description:
+        "A Dapp that allows users to track their token holdings, historical balances and allowances on the Ethereum blockchain.",
+      video: "/tokentrackr.mp4",
+      categories: ["blockchain", "fullstack"],
+      github: "https://github.com/pranayjalan254/TokenTrackr",
+      live: "https://token-trackr.vercel.app/",
+      tags: ["ReactJS", "Typescript", "Web3Auth", "Blockchain"],
+    },
     {
       title: "Wound Area Estimator",
       description:
@@ -37,15 +57,6 @@ const Projects = () => {
       tags: ["Logistic Regression", "Naive Bayes", "Python", "NLTK"],
     },
     {
-      title: "Task Manager API",
-      description:
-        "A practice project to learn about RESTful APIs and CRUD operations.",
-      video: "/task-manager.mp4",
-      categories: ["backend"],
-      github: "https://github.com/pranayjalan254/Task-Manager",
-      tags: ["Nodejs", "RestAPIs", "Express", "Practice"],
-    },
-    {
       title: "BITS Blockchain Club Website",
       description: "A website for the blockchain club of BITS Pilani",
       video: "/blockchain-club.mp4",
@@ -62,15 +73,6 @@ const Projects = () => {
       github: "https://github.com/yourusername/task-api",
       live: "https://bank-loan-management-system.vercel.app/",
       tags: ["MERN", "RestAPIs", "Practice"],
-    },
-    {
-      title: "Deadman Switch",
-      description:
-        "A very simple project to get started with solidity and blockchain.",
-      video: "/deadman.png",
-      categories: ["backend"],
-      github: "https://github.com/pranayjalan254/deadmanswitch",
-      tags: ["Blockchain", "Solidity", "Practice"],
     },
   ];
 
